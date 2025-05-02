@@ -2,13 +2,19 @@ using System;
 
 class Calculator
 {
-    public static int Subtract(int a, int b)
+    public static double Divide(double a, double b)
     {
-        return a - b;
+        if (b == 0)
+        {
+            Console.WriteLine("Error: Cannot divide by zero.");
+            return double.NaN;
+        }
+        return a / b;
     }
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Difference: " + Subtract(10, 4));
+        Console.WriteLine("Quotient: " + Divide(10, 2));
     }
 }
+
