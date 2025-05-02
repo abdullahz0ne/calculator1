@@ -9,6 +9,6 @@ class Calculator
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Product: " + Multiply(4, 5));
+        Console.WriteLine("Product: " + Multiply(44, 5));
     }
 }
